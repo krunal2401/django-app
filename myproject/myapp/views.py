@@ -6,6 +6,8 @@ from reportlab.pdfgen import canvas
 from .models import Student
 # Create your views here.
 
+def index(request):
+    return HttpResponse("<h1> Welcome to the Home Page </h1>")
 
 def getfile(request):
     response = HttpResponse(content_type='text/csv')  

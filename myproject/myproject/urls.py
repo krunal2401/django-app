@@ -19,6 +19,7 @@ from django.urls import path
 from myapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index),
     path('getfile/', views.getfile),
     path('pdf',views.getpdf)  
    
